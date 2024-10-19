@@ -15,6 +15,7 @@ document.getElementById('add-btn').addEventListener('click', function () {
     const category = categorySelect.value;
     const amount = parseFloat(amountInput.value);
     const date = dateInput.value;
+    const expenseNameInput = document.getElementById('expense-name-input')
 
     if (isNaN(amount) || amount <= 0 || date === '') {
         alert('Please enter a valid amount and date.');
@@ -27,7 +28,8 @@ document.getElementById('add-btn').addEventListener('click', function () {
     addTransactionToTable(transaction);
     updateTotal();
     saveTransactions();
-
+    expenseNameInput.value = '';
+    categorySelect.value = '';
     amountInput.value = '';
     dateInput.value = '';
 });
@@ -67,13 +69,6 @@ function addTransactionToTable(transaction) {
 function updateTotal() {
     const total = transactions.reduce((sum, transaction) => sum + transaction.amount, 0);
     totalAmount.textContent = total.toFixed(2);
-
-    const categoryTotals = {};
-    transactions.forEach(t => {
-        categoryTotals[t.category] = (categoryTotals[t.category] || 0) + t.amount;
-    });
-
-    console.log('Category-wise totals:', categoryTotals); 
 }
 
 function saveTransactions() {

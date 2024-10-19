@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="co.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="h1">Expense Tracker</h1>
+            <div class="input-section">
+                <label for="Expense-Name">Expense-Name</label>
+                <input type="text" name="Expense-Name" id="expense-name-input">
+                <label for="category-select">Category:</label>
+                <select id="category-select">
+                    <option value="Transport">Transport</option>
+                    <option value="Food">Food</option>
+                    <option value="Intertanment">Intertanment</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Others">Others</option>
+                    
+                </select>
+                <label for="amount-input">Amount:</label>
+                <input type="number" id="amount-input">
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input">
+                <button id="add-btn">Add</button>
+            </div>
+
+            <div class="expense-list">
+                <h2>Expenses List</h2>
+                <table class="abc">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-list"></tbody>
+                </table>
+            </div>
+
+            <div class="total">
+                <span>Total:</span>
+                <span id="total-amount">0.00</span>
+            </div>
+            
+            <div class="clearall">
+                <button id="clear-all-btn">Clear All</button>
+            </div>
+        </nav>
+    </div>
+
+    <script src="co.js"></script>
+</body>
+</html>

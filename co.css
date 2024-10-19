@@ -1,0 +1,160 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/festive-background-with-defocused-lights_23-2148460291.jpg?size=626&ext=jpg&ga=GA1.1.967060102.1729296000&semt=ais_hybrid');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    padding-top: 50px; 
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    color: black;
+    margin: 20px;
+    text-align: center;
+    background-color: gold;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h2 {
+    color: rgb(239, 208, 6);
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-section {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.input-section label {
+    text-align: left;
+}
+
+.input-section input, 
+.input-section select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.input-section button {
+    grid-column: span 2;
+    background-color: rgb(115, 236, 224);
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    justify-content: center;
+    font-size: 16px;
+    border: 2px solid rgb(245, 244, 247);
+    cursor: pointer;
+}
+
+.expense-list {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    background-color: rgba(232, 235, 225, 0.6);
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.total {
+    background-color: rgb(186, 16, 146);
+    width: 30%;
+    
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearall {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.Edit{
+    background-color: rgb(231, 197, 30);
+    padding:  4px;
+    width: 45px;
+    border-radius:5px ;
+}
+.delete-btn{
+    background-color: rgb(247, 119, 73);
+    padding:  4px;
+    width: 50px;
+    border-radius:5px ;   
+}
+
+.clearall button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-btn:hover, .clearall button:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .h1 {
+        font-size: 22px;
+    }
+
+    .input-section {
+        grid-template-columns: 1fr;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .total, .clearall {
+        width: 90%;
+    }
+}

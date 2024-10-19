@@ -1,42 +1,42 @@
 body {
-    background-image: url('https://img.freepik.com/free-vector/festive-background-with-defocused-lights_23-2148460291.jpg?size=626&ext=jpg&ga=GA1.1.967060102.1729296000&semt=ais_hybrid');
+    background-color: gray;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     display: flex;
     justify-content: center; 
-    padding-top: 50px; 
+    padding-top: 50px;
     color: white;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(50, 50, 50, 0.8);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 80%; 
     max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .h1 {
-    color: black;
+    color: #ffffff;
     margin: 20px;
     text-align: center;
-    background-color: gold;
+    background-color: #ff5722;
     border-radius: 20px;
     padding: 12px;
     font-size: 30px;
     display: flex;
     justify-content: center;
-    
 }
 
 h2 {
-    color: rgb(239, 208, 6);
-    font-size: 24px;
+    color: #ffeb3b;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -51,6 +51,7 @@ h2 {
 
 .input-section label {
     text-align: left;
+    color: #ffccbc;
 }
 
 .input-section input, 
@@ -59,18 +60,26 @@ h2 {
     padding: 8px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    background-color: #4e4e50;
+    color: #ffffff;
 }
 
 .input-section button {
     grid-column: span 2;
-    background-color: rgb(115, 236, 224);
+    background-color: #ff5722;
+    color: white;
     border-radius: 5px;
     padding: 10px;
-    width: 20%;
-    justify-content: center;
+    width: 50%;
     font-size: 16px;
-    border: 2px solid rgb(245, 244, 247);
+    border: none;
     cursor: pointer;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.input-section button:hover {
+    background-color: #e64a19;
 }
 
 .expense-list {
@@ -87,22 +96,24 @@ table {
 }
 
 th, td {
-    border: 1px solid white;
-    background-color: rgba(232, 235, 225, 0.6);
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
     height: 40px;
     padding: 10px;
     text-align: center;
+    color: #ffffff;
 }
 
 .total {
-    background-color: rgb(186, 16, 146);
-    width: 30%;
-    
+    background-color: #2196f3;
+    color: white;
+    width: 50%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
 }
 
 .clearall {
@@ -111,30 +122,17 @@ th, td {
     text-align: center;
 }
 
-.Edit{
-    background-color: rgb(231, 197, 30);
-    padding:  4px;
-    width: 45px;
-    border-radius:5px ;
-}
-.delete-btn{
-    background-color: rgb(247, 119, 73);
-    padding:  4px;
-    width: 50px;
-    border-radius:5px ;   
-}
-
 .clearall button {
     padding: 10px;
-    background-color: red;
+    background-color: #f44336;
     color: white;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
 
-#add-btn:hover, .clearall button:hover {
-    background-color: rgb(200, 0, 0);
+.clearall button:hover {
+    background-color: #d32f2f;
 }
 
 @media (max-width: 600px) {
@@ -158,3 +156,8 @@ th, td {
         width: 90%;
     }
 }
+
+   
+
+
+    

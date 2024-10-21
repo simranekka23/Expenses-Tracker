@@ -1,17 +1,18 @@
 body {
-    background-color: gray;
+    background-color:#b79ed4;
     background-size: cover;
     font-family: 'Arial', sans-serif;
     margin: 0;
+    font-size: 1rem; 
     display: flex;
     justify-content: center; 
     padding-top: 50px;
-    color: white;
+    color: rgb(14, 13, 13);
 }
 
 .container {
-    background-color: rgba(50, 50, 50, 0.8);
-    padding: 20px;
+    background-color:#fbfaf0;
+    padding: 1.25rem;
     border-radius: 15px;
     width: 80%; 
     max-width: 900px;
@@ -19,31 +20,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(244, 242, 242, 0.5);
 }
 
 .h1 {
-    color: #ffffff;
-    margin: 20px;
+    margin: 1.25rem;
     text-align: center;
-    background-color: #ff5722;
+    background-color: #d1b2f0;
     border-radius: 20px;
     padding: 12px;
-    font-size: 30px;
+    font-size: 2rem; 
     display: flex;
     justify-content: center;
 }
 
 h2 {
-    color: #ffeb3b;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
 }
 
 .input-section {
     text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 1.25rem;
+    margin-bottom: 1.875rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -51,27 +50,24 @@ h2 {
 
 .input-section label {
     text-align: left;
-    color: #ffccbc;
 }
 
 .input-section input, 
 .input-section select {
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem; 
     border-radius: 6px;
     border: 1px solid #ccc;
-    background-color: #4e4e50;
-    color: #ffffff;
+    background-color: #f8f8fc;
 }
 
 .input-section button {
     grid-column: span 2;
-    background-color: #ff5722;
-    color: white;
+    background-color: #e4baf4;
     border-radius: 5px;
     padding: 10px;
-    width: 50%;
-    font-size: 16px;
+    width: 30%;
+    font-size: 1.125rem;
     border: none;
     cursor: pointer;
     justify-content: center;
@@ -79,13 +75,13 @@ h2 {
 }
 
 .input-section button:hover {
-    background-color: #e64a19;
+    background-color: #9bb5b4;
 }
 
 .expense-list {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 table {
@@ -95,26 +91,28 @@ table {
     border-collapse: collapse;
 }
 
+.tr{
+    background-color: #b79ed4;
+}
+
 th, td {
-    border: 1px solid #ffffff;
+    border: 1px solid #151111;
     background-color: rgba(255, 255, 255, 0.2);
-    height: 40px;
+    height: 35px;
+    width: auto;
     padding: 10px;
     text-align: center;
-    color: #ffffff;
 }
 
 .total {
-    background-color: #2196f3;
-    color: white;
-    width: 50%;
+    background-color: #d8afe2;
+    width: 40%;
     margin: 20px auto;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-}
+    font-size: 1.125rem; }
 
 .clearall {
     width: 50%;
@@ -122,34 +120,70 @@ th, td {
     text-align: center;
 }
 
+.Edit {
+    font-size: 1.125rem; 
+    font-family: cursive;
+    color: #bdb214;
+}
+
+.delete-btn {
+    font-size: 1.125rem;
+    font-family: cursive;
+    color: #982b1d;
+}
+
 .clearall button {
-    padding: 10px;
-    background-color: #f44336;
-    color: white;
+    padding: 0.625rem;
+    background-color: #d0c9c9;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem; 
     cursor: pointer;
 }
 
 .clearall button:hover {
-    background-color: #d32f2f;
+    background-color: #dd6256;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    table, th, td {
+        font-size: 0.875rem;
+    }
+
+    .total, .clearall {
+        width: 80%;
+    }
+
+    .clearall button {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
     .container {
         width: 95%;
     }
 
     .h1 {
-        font-size: 22px;
-    }
-
-    .input-section {
-        grid-template-columns: 1fr;
+        font-size: 1.25rem;
     }
 
     table, th, td {
-        font-size: 14px;
+        font-size: 0.75rem;
     }
 
     .total, .clearall {
@@ -157,7 +191,6 @@ th, td {
     }
 }
 
-   
 
 
     
